@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+<head>
+
+</head>
+{% block content%}
+	<body id="main_body" >
+		<div id="form_container">
+			<h1><a>Dodaj ulicu</a></h1>
+			<form id="form_6241" class="appnitro"  method="post" action="">
+						<div class="form_description">
+				<p>Sva polja su obavezna.</p>
+			</div>						
+				<ul >
+				
+						<li id="li_1" >
+			<label class="description" for="element_1">Naziv ulice </label>
+			<div>
+				<input id="element_1" name="element_1" class="element text medium" type="text" maxlength="255" value=""/> 
+			</div> 
+			</li>		<li id="li_3" >
+			<label class="description" for="element_3">Po cemu je dobila ime </label>
+			<div>
+			<select class="element select medium" id="element_3" name="element_3"> 
+				<option value="" selected="selected"></option>
+	<option value="1" >Ličnost</option>
+	<option value="2" >Događaj</option>
+	<option value="3" >Datum</option>
+	<option value="4" >Drzava</option>
+	<option value="5" >Grad</option>
+	<option value="6" >Mesto</option>
+	<option value="7" >Reka</option>
+	<option value="8" >Planina</option>
+	<option value="9" >Pesma</option>
+	<option value="10" >Oblast</option>
+	<option value="11" >Zanimanje</option>
+	<option value="12" >Zivotinja</option>
+	<option value="13" >Biljka</option>
+	<option value="14" >Nesto drugo</option>
+
+			</select>
+			</div> 
+			</li>		<li id="li_2" >
+			<label class="description" for="element_2">Opis </label>
+			<div>
+				<textarea id="element_2" name="element_2" class="element textarea medium"></textarea> 
+			</div> 
+			</li>		<li id="li_4" >
+			<label class="description" for="element_4">Kategorija </label>
+			<div>
+			<select class="element select medium" id="element_4" name="element_4"> 
+				<option value="" selected="selected"></option>
+	<option value="1" >Ulica</option>
+	<option value="2" >Bulevar</option>
+	<option value="3" >Avenija</option>
+	<option value="4" >Trg</option>
+
+			</select>
+			</div> 
+			</li>
+				
+						<li class="buttons">
+					<input type="hidden" name="form_id" value="6241" />
+					
+					<input id="saveForm" class="button_text" type="submit" name="submit" value="Posalji" />
+			</li>
+				</ul>
+			</form>	
+		</div>
+		</body>
+{% endblock %}
+</html>

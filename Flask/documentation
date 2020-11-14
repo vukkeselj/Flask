@@ -1,0 +1,7 @@
+--- after stopping and restarting an instance, it will get a new public IPv4 address
+--- ssh into the instance (make sure that IPv4 is accurate)
+--- update the flaskapp file using "sudo nano flaskapp" command - add the new IPv4 address
+--- flaskapp is located at /etc/nginx/sites-enabled/
+--- restart nginx after updating the flaskapp file using the command "sudo service nginx restart"
+--- go to the right folder Flask/Flask and run the app using the command "gunicorn3 page:app"
+--- copy and paste the IPv4 addres into browser and there it should be

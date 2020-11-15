@@ -1,4 +1,6 @@
 from flask import Flask, render_template, request, json
+import boto3
+import datetime
 
 app = Flask(__name__)
 
@@ -18,8 +20,14 @@ def form():
         for i in ["street_name", "named_after", "description", "category"]:
             street[i] = eval(i)
         print(street)
-        with open('mydata.json', 'w') as f:
+        with open('street_name.json', 'w') as f:
             json.dump(street, f)
+        
+        now = datetime.datetime.now()
+        dt = now.strftime("%Y-%m-%d %H:%M:%S")
+        s3_filename = street_name + ' ' + dt
+        s3 = boto3.resource('s3')
+        s3.meta.client.upload_file('/home/vuk/Flask/Flask/street_name.json', 'street-name', s3_filename)
         return render_template("ulica.html", ulica=street)
     else:
         return render_template("form.html")

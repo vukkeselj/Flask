@@ -5,67 +5,121 @@
 {% block content%}
 	<body id="main_body" >
 		<div id="form_container">
+			<ul><ul>
 			<h1><a>Dodaj ulicu</a></h1>
 			<form id="form_6241" class="appnitro"  method="post" action="">
-						<div class="form_description">
-				<p>Sva polja su obavezna.</p>
-			</div>						
-				<ul >
-				
-						<li id="li_1" >
-			<label class="description" for="element_1">Naziv ulice </label>
-			<div>
-				<input id="element_1" name="element_1" class="element text medium" type="text" maxlength="255" value=""/> 
-			</div> 
-			</li>		<li id="li_3" >
-			<label class="description" for="element_3">Po cemu je dobila ime </label>
-			<div>
-			<select class="element select medium" id="element_3" name="element_3"> 
-				<option value="" selected="selected"></option>
-	<option value="Ličnost" >Ličnost</option>
-	<option value="Događaj" >Događaj</option>
-	<option value="Datum" >Datum</option>
-	<option value="Drzava" >Drzava</option>
-	<option value="Grad" >Grad</option>
-	<option value="Mesto" >Mesto</option>
-	<option value="Reka" >Reka</option>
-	<option value="Planina" >Planina</option>
-	<option value="Pesma" >Pesma</option>
-	<option value="Oblast" >Oblast</option>
-	<option value="Zanimanje" >Zanimanje</option>
-	<option value="Zivotinja" >Zivotinja</option>
-	<option value="Biljka" >Biljka</option>
-	<option value="Nesto drugo" >Nesto drugo</option>
-
-			</select>
-			</div> 
-			</li>		<li id="li_2" >
-			<label class="description" for="element_2">Opis </label>
-			<div>
-				<textarea id="element_2" name="element_2" class="element textarea medium"></textarea> 
-			</div> 
-			</li>		<li id="li_4" >
-			<label class="description" for="element_4">Kategorija </label>
-			<div>
-			<select class="element select medium" id="element_4" name="element_4"> 
-				<option value="" selected="selected"></option>
-	<option value="Ulica" >Ulica</option>
-	<option value="Bulevar" >Bulevar</option>
-	<option value="Avenija" >Avenija</option>
-	<option value="Trg" >Trg</option>
-
-			</select>
-			</div> 
-			</li>
-				
-						<li class="buttons">
+				<div class="form_description">
+					<p>
+						Sva polja su obavezna.
+					</p>
+				</div>						
+				<li id="li_1" >
+					<label class="description" for="element_1">Naziv ulice </label>
+					<div>
+						<input id="element_1" name="element_1" class="element text medium" type="text" maxlength="255" value=""/> 
+					</div> 
+				</li>		
+				<li id="li_3" >
+					<label class="description" for="element_3">Po čemu je dobila ime </label>
+					<div>
+						<select class="element select medium" id="element_3" name="element_3"> 
+							<option value="" selected="selected"></option>
+							<option value="Ličnost" >Ličnost</option>
+							<option value="Događaj" >Događaj</option>
+							<option value="Datum" >Datum</option>
+							<option value="Drzava" >Drzava</option>
+							<option value="Grad" >Grad</option>
+							<option value="Mesto" >Mesto</option>
+							<option value="Reka" >Reka</option>
+							<option value="Planina" >Planina</option>
+							<option value="Pesma" >Pesma</option>
+							<option value="Oblast" >Oblast</option>
+							<option value="Zanimanje" >Zanimanje</option>
+							<option value="Zivotinja" >Zivotinja</option>
+							<option value="Biljka" >Biljka</option>
+							<option value="Nesto drugo" >Nesto drugo</option>
+						</select>
+					</div> 
+				</li>		
+				<li id="li_2" >
+					<label class="description" for="element_2">Opis </label>
+					<div>
+						<textarea id="element_2" name="element_2" rows="5" cols="60" ></textarea> 
+					</div> 
+				</li>		
+				<li id="li_4" >
+					<label class="description" for="element_4">Kategorija </label>
+					<div>
+						<select class="element select medium" id="element_4" name="element_4"> 
+							<option value="" selected="selected"></option>
+							<option value="Ulica" >Ulica</option>
+							<option value="Bulevar" >Bulevar</option>
+							<option value="Avenija" >Avenija</option>
+							<option value="Trg" >Trg</option>
+						</select>
+					</div> 
+				</li>			
+				<li id="li_5" >
+					<label for="element_5">Godina imenovanja</label>
+					<div>
+						<input id="element_5" name="element_5" class="element text medium" type="text" maxlength="255" value=""/> 
+					</div> 
+				</li>			
+				<li id="li_6" >
+					<label class="description" for="element_6">Prethodni naziv </label>
+					<div>
+						<input id="element_6" name="element_6" class="element text medium" type="text" maxlength="255" value=""/> 
+					</div> 
+				</li>			
+				<li id="li_7" >
+				<label class="description" for="element_7">Deo grada/naselje </label>
+					<div>
+						<select class="element select medium" id="element_7" name="element_7"> 
+							<option value="" selected="selected"></option>
+							<option value="Klisa" >Klisa</option>
+							<option value="Slana bara" >Slana bara</option>
+							<option value="Vidovdansko naselje" >Vidovdansko naselje</option>
+							<option value="Salajka" >Salajka</option>
+							<option value="Podbara" >Podbara</option>
+							<option value="Petrovaradin" >Petrovaradin</option>
+							<option value="Stari grad" >Stari grad</option>
+							<option value="Rotkvarija" >Rotkvarija</option>	
+							<option value="Betanija" >Betanija</option>
+							<option value="Banatić" >Banatić</option>
+							<option value="Sajmište" >Sajmište</option>
+							<option value="Detelinara" >Detelinara</option>
+							<option value="Avijatičarsko naselje" >Avijatičarsko naselje</option>
+							<option value="Jugovićevo" >Jugovićevo</option>
+							<option value="Sajlovo" >Sajlovo</option>
+							<option value="Novo naselje" >Novo naselje</option>
+							<option value="Satelit" >Satelit</option>
+							<option value="Adice" >Adice</option>
+							<option value="Telep" >Telep</option>
+							<option value="Adamovićevo naselje" >Adamovićevo naselje</option>
+							<option value="Grbavica" >Grbavica</option>
+							<option value="Liman I" >Liman I</option>
+							<option value="Liman II" >Liman II</option>
+							<option value="Liman III" >Liman III</option>
+							<option value="Liman IV" >Liman IV</option>
+							<option value="Ribarsko ostrvo" >Ribarsko ostrvo</option>
+							<option value="Kamenjar" >Kamenjar</option>
+						</select>
+					</div> 
+				</li>
+				<li id="li_8" >
+					<label class="description" for="element_8">Reference </label>
+					<div>
+						<textarea id="element_8" name="element_8" rows="5" cols="60" ></textarea> 
+					</div> 
+				</li>		
+				<li class="buttons">
 					<input type="hidden" name="form_id" value="6241" />
 					
 					<input id="saveForm" class="button_text" type="submit" name="submit" value="Posalji" />
-			</li>
+				</li>
 				</ul>
 			</form>	
 		</div>
-		</body>
+	</body>
 {% endblock %}
 </html>
